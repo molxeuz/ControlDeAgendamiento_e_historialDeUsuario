@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #7a7878
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -670px;
+    width: 1300px;
+    height: 80px;
+    background-color: #d6d6d6;
+    border: 2px solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.container_full{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    width: 1300px;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 20px ;
+}
+
+.datos_uno{
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+.datos_dos{
+    margin-left: 450px;
+    margin-top: -405px;
+    width: 400px;
+    height: 400px;
+}
+
+.datos_tres{
+    margin-left: 930px;
+    margin-top: -405px;
+    width: 300px;
+    height: 400px;
+}
+
+.foto_empleado{
+    max-width: 265px !important;
+    min-width: 265px !important;    
+    max-height: 220px !important;
+    min-height: 220px  !important;
+    margin-left: 15px;
+    margin-top: 20px;
+    border: 2px solid;
+}
+
+#file{
+    display: none;
+}
+
+.subir{
+    font-size: 25px;
+    width: 120px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -500px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.borrar{
+    font-size: 25px;
+    width: 120px;
+    height: 45px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.enunciado_foto{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.enviar{
+    margin-left: 350px;
+    width: 700px;
+    height: 500px;
+}
+
+.registrarse{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 320px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.inicio{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: -650px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.registrarse_link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.inicio_link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.enunciado_tipo{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_tipo{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_nombre{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+.enunciado_apellido{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_nombre{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+.respuesta_apellido{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_correo{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_correo{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_telefono{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_telefono{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_contraseña{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_contraseña{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}

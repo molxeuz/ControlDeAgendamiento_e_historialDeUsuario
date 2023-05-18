@@ -1,0 +1,386 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 1500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #7a7878
+}
+
+/* menu */
+
+.logo{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 220px;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.opciones_menu{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 930px;
+    margin-left: 420px;
+    margin-top: -102px;
+}
+
+.opciones_usuario{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 445px;
+    margin-left: 1400px;
+    margin-top: -102px;
+}
+
+.menu{
+    border: 2px solid black;
+    background-color: #d6d6d6;
+    height: 130px;
+}
+
+.inicio{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.inicio_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.boton_menu{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin: 0px 0px -6px -6px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.3s ease;
+}
+
+.boton_menu:hover{
+    background-color: #81bfeb;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.boton_usuario{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.boton_usuario:hover{
+    background-color: #81bfeb;
+}
+
+.usuario_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#primer_boton{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#ultimo_boton{
+    border-radius: 0px 10px 10px 0px;
+    background-color: #81bfeb;
+}
+
+/* empleado  */
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1134px;
+    width: 1300px;
+    height: 80px;
+    background-color: #d6d6d6;
+    border: 2px solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.container_full{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    width: 1300px;
+    height: 1130px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 20px ;
+}
+
+.datos_uno{
+    margin-left: 20px;
+    margin-top: 120px;
+    width: 400px;
+    height: 150px;
+}
+
+.datos_dos{
+    margin-left: 445px;
+    margin-top: -153px;
+    width: 400px;
+    height: 150px;
+}
+
+.datos_tres{
+    margin-left: 870px;
+    margin-top: -153px;
+    width: 400px;
+    height: 150px;
+}
+
+.datos_cuatro{
+    margin-left: 85px;
+    margin-top: 30px;
+    width: 550px;
+    height: 480px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #d6d6d6;
+}
+
+.datos_cinco{
+    margin-left: 685px;
+    margin-top: -483px;
+    width: 550px;
+    height: 770px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #d6d6d6;
+}
+
+.enviar{
+    margin-left: 85px;
+    margin-top: -255px;
+    width: 550px;
+    height: 260px;
+}
+
+.registrarse{
+    font-size: 25px;
+    width: 230px;
+    height: 45px;
+    margin-left: 25px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.inicio_regresar{
+    font-size: 25px;
+    width: 230px;
+    height: 45px;
+    margin-left: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.registrarse_link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.inicio_link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* mostrar */
+
+.enunciado_identificacion, .enunciado_altura, .enunciado_peso{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_identificacion, .respuesta_altura, .respuesta_peso{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_antecedentes_traumatico{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -160px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_motivo_consulta{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -280px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_antecedente_patologicos{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -160px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_tratamientos_previos{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -230px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_resultados{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: 30px;
+    color: black;
+}
+
+.respuesta_resultados{
+    background-color: #fff;
+    font-size: 25px;
+    width: 460px;
+    height: 500px;
+    margin-left: 35px;
+    margin-top: -15px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.respuesta_antecedente_traumatico, .respuesta_antecedente_patologicos, .respuesta_tratamientos_previos, .respuesta_motivo_consulta{
+    font-size: 25px;
+    width: 460px;
+    height: 45px;
+    margin-left: 35px;
+    margin-top: -15px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.enunciado_columna, .enunciado_pelvis, .enunciado_extremidades{
+    font-size: 20px;
+    text-align: center;
+    margin-left: -330px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_pelvis{
+    font-size: 20px;
+    text-align: center;
+    margin-left: -350px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_extremidades{
+    font-size: 20px;
+    text-align: center;
+    margin-left: -280px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_craneal{
+    font-size: 20px;
+    text-align: center;
+    margin-left: -340px;
+    margin-top: 30px;
+    color: black;
+}
+
+.respuesta_columna, .respuesta_pelvis, .respuesta_extremidades, .respuesta_craneal{
+    font-size: 20px;
+    width: 400px;
+    height: 45px;
+    margin-left: 15px;
+    margin-top: -15px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+    padding: 5px 10px;
+    background-color: #d3d3d3;
+}
+
+.enunciado_doctor{
+    font-size: 25px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8a8a8;
+    color: black;
+    border: 2px solid;
+}
+
+.respuesta_doctor{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 125px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}

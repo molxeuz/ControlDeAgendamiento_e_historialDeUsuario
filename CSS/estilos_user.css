@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 1000px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #7a7878
+}
+
+/* menu */
+
+.logo{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 220px;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.opciones_menu{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 930px;
+    margin-left: 420px;
+    margin-top: -102px;
+}
+
+.opciones_usuario{
+    background-color: #d6d6d6;
+    height: 100px;
+    width: 445px;
+    margin-left: 1400px;
+    margin-top: -102px;
+}
+
+.menu{
+    border: 2px solid black;
+    background-color: #d6d6d6;
+    height: 130px;
+}
+
+.inicio{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.inicio_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.boton_menu{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin: 0px 0px -6px -6px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.3s ease;
+}
+
+.boton_menu:hover{
+    background-color: #81bfeb;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.boton_usuario{
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    margin-top: 20px;
+    text-align: center;
+    border: 3px solid black;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.boton_usuario:hover{
+    background-color: #81bfeb;
+}
+
+.usuario_link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#primer_boton{
+    border-radius: 10px 0px 0px 10px;
+}
+
+#ultimo_boton{
+    border-radius: 0px 10px 10px 0px;
+}
+
+#boton_usuario_press{
+    background-color: #81bfeb;
+}
+
+/* empleado  */
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -670px;
+    width: 1300px;
+    height: 80px;
+    background-color: #d6d6d6;
+    border: 2px solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.container_full{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    width: 1300px;
+    height: 650px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-radius: 20px ;
+}
+
+.datos_uno{
+    margin-left: 20px;
+    margin-top: 130px;
+    width: 400px;
+    height: 400px;
+}
+
+.datos_dos{
+    margin-left: 450px;
+    margin-top: -430px;
+    width: 400px;
+    height: 400px;
+}
+
+.datos_tres{
+    margin-left: 930px;
+    margin-top: -430px;
+    margin-bottom: -40px;
+    width: 300px;
+    height: 400px;
+}
+
+.foto_empleado{
+    width: 265px;
+    height: 220px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border: 2px solid;
+}
+
+#file{
+    display: none;
+}
+
+.subir{
+    font-size: 25px;
+    width: 120px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -500px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.borrar{
+    font-size: 25px;
+    width: 120px;
+    height: 45px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.enunciado_foto{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -90px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    color: black;
+}
+
+.enviar{
+    margin-left: 350px;
+    width: 700px;
+    height: 500px;
+}
+
+.registrarse{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 320px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.inicio_regresar{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: -650px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.registrarse_link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.inicio_link{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* mostrar */
+
+.respuesta_tipo, .respuesta_nombre, .respuesta_id, .respuesta_correo, .respuesta_telefono, .respuesta_contraseña{
+    font-size: 25px;
+    width: 300px;
+    height: 45px;
+    margin-left: 60px;
+    margin-top: -15px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+}
+
+.enunciado_tipo{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -60px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_nombre{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -60px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_id{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -110px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_correo{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -60px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_telefono{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -90px;
+    margin-top: 30px;
+    color: black;
+}
+
+.enunciado_contraseña{
+    font-size: 25px;
+    text-align: center;
+    margin-left: -140px;
+    margin-top: 30px;
+    color: black;
+}
