@@ -47,7 +47,6 @@
             array('Fecha de Nacimiento', $fila['fechanacimiento']),
             array('Genero', $fila['genero']),
             array('Direccion', $fila['direccion']),
-            array('Foto del paciente', $fila['imagen_paciente'])
         );
         
         foreach ($datos as $filaDatos) {

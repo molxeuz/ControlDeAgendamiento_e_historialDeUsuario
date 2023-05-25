@@ -56,10 +56,9 @@
                             <input type="text" class="enunciado_tipo" value="Tipo de identificacion" disabled>
                             
                             <select name="tipoidentificacion" class="respuesta_tipo">
-                                <option value="NIP">NIP</option>
-                                <option value="NIT">NIT</option>
+                                <option value="CC">CC</option>
                                 <option value="TI">TI</option>
-                                <option value="PAP">PAP</option>
+                                <option value="CX">CX</option>
                             </select>
 
                         </section>

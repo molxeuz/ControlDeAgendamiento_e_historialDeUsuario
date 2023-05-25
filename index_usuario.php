@@ -1,4 +1,17 @@
 
+<?php
+
+    require_once ('./controller/read.php');
+
+    if (isset($_POST['btnModificacionusuarios'])){
+        require_once ('./controlador/getupdate.php');
+    }
+    $verificar = new Conexion();
+    $resultado = new Consulta();
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,7 +60,7 @@
                 
                     <h3 class="enunciado_tipo">Tipo de empleado</h3>
 
-                    <input type="text" name="profesion" id="profesion" class="respuesta_tipo" disabled>
+                    <input type="text" name="profesion" id="profesion" class="respuesta_tipo" disabled value="<?php echo $_SESSION['profesion'];?>">
 
                 </section>
 
@@ -56,7 +69,7 @@
 
                     <h3 class="enunciado_nombre">Nombre completo</h3>
 
-                    <input type="text" name="name" id="name" class="respuesta_nombre" disabled>
+                    <input type="text" name="name" id="name" class="respuesta_nombre" disabled value="<?php echo $_SESSION['nombre'];?>">
 
                 </section>
 
@@ -65,7 +78,7 @@
 
                     <h3 class="enunciado_id">Identificacion</h3>
 
-                    <input type="text" name="idUsuarioSalud" id="idUsuarioSalud" class="respuesta_id" disabled>
+                    <input type="text" name="idUsuarioSalud" id="idUsuarioSalud" class="respuesta_id" disabled value="<?php echo $_SESSION['user'];?>">
 
                 </section>
 
@@ -79,7 +92,7 @@
 
                     <h3 class="enunciado_telefono">Telefono celular</h3>
 
-                    <input type="text" name="telefono" id="telefono" class="respuesta_telefono" disabled>
+                    <input type="text" name="telefono" id="telefono" class="respuesta_telefono" disabled value="<?php echo $_SESSION['telefono'];?>">
 
                 </section>
 
@@ -88,16 +101,7 @@
 
                     <h3 class="enunciado_correo">Correo electronico</h3>
 
-                    <input type="text" name="email" id="email" class="respuesta_correo" disabled>
-
-                </section>
-
-                <!-- Contraseña empleado -->
-                <section class="datos_contraseña">
-
-                    <h3 class="enunciado_contraseña">Contraseña</h3>
-
-                    <input type="text" name="password" id="password" class="respuesta_contraseña" disabled>
+                    <input type="text" name="email" id="email" class="respuesta_correo" disabled value="<?php echo $_SESSION['correo'];?>">
 
                 </section>
 
@@ -148,7 +152,7 @@
 
             <section class="enviar">
 
-                <input type="submit" name="btnRegistrar" class="registrarse" value="CERRAR SESION">
+                <button class="registrarse"><a class="inicio_link" href="index.php">CERRAR SESION</a></button>
 
                 <button class="inicio_regresar"><a class="inicio_link" href="index_despues.php">IR A CALENDARIO</a></button>
 

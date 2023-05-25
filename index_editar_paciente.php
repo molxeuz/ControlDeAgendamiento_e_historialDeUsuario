@@ -101,10 +101,9 @@
                             <h3 class="enunciado_tipo">Tipo de identificacion</h3>
 
                             <select name="tipoidentificacion" class="respuesta_tipo" value="<?php echo $tipoidentificacion; ?>">
-                                <option value="NIP">NIP</option>
-                                <option value="NIT">NIT</option>
+                            <option value="CC">CC</option>
                                 <option value="TI">TI</option>
-                                <option value="PAP">PAP</option>
+                                <option value="CX">CX</option>
                             </select>
 
                         </section>

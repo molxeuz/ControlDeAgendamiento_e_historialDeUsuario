@@ -57,8 +57,8 @@ require('controller/db.php');
                             <input type="text" class="enunciado_tipo" value="Tipo de empleado" disabled>
                             
                             <select name="profesion" class="respuesta_tipo">
-                                <option value="doctor">Doctor</option>
-                                <option value="asistente">Asistente</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Asistente">Asistente</option>
                             </select>
 
                        </section>
