@@ -4,7 +4,9 @@
 
     require('librerias/fpdf.php');
 
-    $sql = "SELECT identificacion_paciente, altura_paciente, peso_paciente, traumaticos, patologicos, tratamiento_previo, motivo_consulta, columna, pelvis, extremidades, zona_craneal, nombre_doctor FROM historial";
+    $id = $_GET['id_historial'];
+
+    $sql = "SELECT identificacion_paciente, altura_paciente, peso_paciente, traumaticos, patologicos, tratamiento_previo, motivo_consulta, columna, pelvis, extremidades, zona_craneal, nombre_doctor FROM historial WHERE id_historial = $id";
     $resultado = $conn->query($sql);
 
     $pdf = new FPDF();
@@ -18,7 +20,7 @@
         class PDF extends FPDF {
             function Header() {
                 $this->SetFont('Arial', 'B', 16);
-                $this->Cell(0, 20, 'Registro de Pacientes', 0, 1, 'C');
+                $this->Cell(0, 20, 'Registro de historial clinico', 0, 1, 'C');
             }
         
             function Footer() {
@@ -39,14 +41,18 @@
         $pdf->SetFont('Arial', '', 12);
         
         $datos = array(
-            array('Identificacion', $fila['identificacion']),
-            array('Tipo Identificacion', $fila['tipoidentificacion']),
-            array('Nombre', $fila['nombre']),
-            array('Telefono', $fila['telefono']),
-            array('Correo', $fila['correo']),
-            array('Fecha de Nacimiento', $fila['fechanacimiento']),
-            array('Genero', $fila['genero']),
-            array('Direccion', $fila['direccion']),
+            array('Identificacion del paciente', $fila['identificacion_paciente']),
+            array('Altura del paciente', $fila['altura_paciente']),
+            array('Peso del paciente', $fila['peso_paciente']),
+            array('Traumaticos', $fila['traumaticos']),
+            array('patologicos', $fila['patologicos']),
+            array('tratamiento previo', $fila['tratamiento_previo']),
+            array('Motivo de consulta', $fila['motivo_consulta']),
+            array('Columna', $fila['columna']),
+            array('pelvis', $fila['pelvis']),
+            array('Extremidades', $fila['extremidades']),
+            array('Zona craneal', $fila['zona_craneal']),
+            array('Nombre del doctor', $fila['nombre_doctor'])
         );
         
         foreach ($datos as $filaDatos) {

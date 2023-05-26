@@ -4,7 +4,9 @@
 
     require('librerias/fpdf.php');
 
-    $sql = "SELECT identificacion, tipoidentificacion, nombre, telefono, correo, fechanacimiento, genero, direccion FROM usuarios";
+    $id = $_GET['id'];
+
+    $sql = "SELECT identificacion, tipoidentificacion, nombre, telefono, correo, fechanacimiento, genero, direccion FROM usuarios WHERE id = $id ";
     $resultado = $conn->query($sql);
 
     $pdf = new FPDF();

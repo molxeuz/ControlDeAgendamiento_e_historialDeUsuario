@@ -1,34 +1,35 @@
 <?php
 
-require('controller/db.php');
+    require('controller/db.php');
 
     if(isset($_POST['btnRegistrar'])){
 
-    $conexion=mysqli_connect("localhost","root","","quirovida") or die ("Error en la conexion");
+        $conexion=mysqli_connect("localhost","root","","quirovida") or die ("Error en la conexion");
 
-    $idusuario = $_POST['idUsuarioSalud'];
-    $nombre = $_POST['name'];
-    $profesion = $_POST['profesion'];
-    $telefono = $_POST['telefono'];
-    $correo = $_POST['email'];
-    $password = $_POST['password'];
-    
-    if (!empty($_FILES['imagen_empleado']['tmp_name'])) {
-        $imagen_empleado = addslashes(file_get_contents($_FILES['imagen_empleado']['tmp_name']));
-    } else {
-        $imagen_empleado = NULL;
+        $idusuario = $_POST['idUsuarioSalud'];
+        $nombre = $_POST['name'];
+        $profesion = $_POST['profesion'];
+        $telefono = $_POST['telefono'];
+        $correo = $_POST['email'];
+        $password = $_POST['password'];
+        
+        if (!empty($_FILES['imagen_empleado']['tmp_name'])) {
+            $imagen_empleado = addslashes(file_get_contents($_FILES['imagen_empleado']['tmp_name']));
+        } else {
+            $imagen_empleado = NULL;
+        }
+
+        $sql = "INSERT INTO `usuariomedico` (`idUsuarioSalud`, `nombre`, `profesion`, `telefono`, `correo`, `estado`, `clave`, `imagen_empleado`) VALUES ('$idusuario', '$nombre', '$profesion', '$telefono', '$correo', '1', '$password', '$imagen_empleado');";
+
+
+        $registro = mysqli_query($conn,$sql);
+
+        echo "<script>window.location='index.php';</script>";
+
     }
 
-    $sql = "INSERT INTO `usuariomedico` (`idUsuarioSalud`, `nombre`, `profesion`, `telefono`, `correo`, `estado`, `clave`, `imagen_empleado`) VALUES ('$idusuario', '$nombre', '$profesion', '$telefono', '$correo', '1', '$password', '$imagen_empleado');";
-
-
-    $registro = mysqli_query($conn,$sql);
-
-    echo "<script>alert('Registro exitoso');</script>";
-    echo "<script>window.location='index.php';</script>";
-
-}
 ?>
+
 <!DOCTYPE html>
 
     <html lang="en">

@@ -32,8 +32,8 @@
         $telefono  = $_POST['telefono'];
         $correo = $_POST['correo'];
         $fechanacimiento = $_POST['fechanacimiento'];
-        $genero = $_POST['genero']; 
-        $direccion = $_POST['direccion']; 
+        $genero = $_POST['genero'];
+        $direccion = $_POST['direccion'];
 
         $query = "UPDATE usuarios set identificacion = '$identificacion',tipoidentificacion = '$tipoidentificacion', nombre = '$nombre',
         telefono = '$telefono',correo= '$correo', fechanacimiento = '$fechanacimiento',
@@ -41,8 +41,6 @@
 
         mysqli_query($conn, $query);
         
-        $_SESSION['message'] = 'Editado con exito';
-        $_SESSION['message_type'] = 'success';
         header("location: index_lista_paciente.php");
 
     }

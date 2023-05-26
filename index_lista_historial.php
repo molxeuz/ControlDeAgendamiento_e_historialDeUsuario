@@ -1,3 +1,9 @@
+<?php 
+
+    include("controller/db.php"); 
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,21 +50,38 @@
 
                 <table>
                     <tr>
-                    <th>ID DEL PACIENTE</th>
-                    <th>ALTURA PACIENTE</th>
-                    <th>PESO PACIENTE</th>
-                    <th>MOTIVO CONSULTA</th>
-                    <th>NOMBRE DOCTOR</th>
-                    <th>OPCIONES</th>
+
+                        <th>ID DEL PACIENTE</th>
+                        <th>ALTURA PACIENTE</th>
+                        <th>PESO PACIENTE</th>
+                        <th>MOTIVO CONSULTA</th>
+                        <th>NOMBRE DOCTOR</th>
+                        <th>OPCIONES</th>
+
                     </tr>
+
+                    <?php
+
+                        $query = "SELECT * FROM historial";
+                        $result = mysqli_query($conn, $query);
+
+                        while($row = mysqli_fetch_array($result)) { 
+
+                    ?>
+
                     <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a class="" href="index_editar_historial.php">EDITAR</a>, <a href="">BORRAR</a>, <a href="exportar_historial.php?id=<?php echo $row['id']?>">PDF</a></td>
+
+                        <td> <?php echo $row['identificacion_paciente'] ?> </td>
+                        <td> <?php echo $row['altura_paciente'] ?> </td>
+                        <td> <?php echo $row['peso_paciente'] ?> </td>
+                        <td> <?php echo $row['motivo_consulta'] ?> </td>
+                        <td> <?php echo $row['nombre_doctor'] ?> </td>
+                        <td><a href="index_editar_historial.php?id_historial=<?php echo $row['id_historial']?>">EDITAR</a>, <a href="delete_historial.php?id_historial=<?php echo $row['id_historial']?>">BORRAR</a>, <a href="exportar_historial.php?id_historial=<?php echo $row['id_historial']?>">PDF</a></td>
+
                     </tr>
+
+                    <?php } ?>
+
                 </table>
 
             </section>
